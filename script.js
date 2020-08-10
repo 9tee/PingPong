@@ -72,8 +72,14 @@ function main() {
     ball.draw()
     list.push(line1)
     list.push(ball)
+    setInterval(go,500)
 }
 
+function go(){
+    Clear()
+    list[1].move()
+    Draw(list)
+}
 
 function reDraw(e) {
     Clear()
